@@ -1,7 +1,7 @@
 # 2Gtech-Coderhouse
 Proyecto de cursada Coderhouse
 <h1 align="center">Hi 👋, I'm Hernan Lahargou</h1>
-<h3 align="center">Aprendiendo programación WEB</h3>
+<h3 align="center">Learning Web Development</h3>
 
 - 📫 How to reach me **hernan.lahargou@gmail.com**
 
