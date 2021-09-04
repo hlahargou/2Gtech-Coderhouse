@@ -1,0 +1,68 @@
+/*--------------------------- Servicios ----------------------------*/
+.subtitle{
+    display: flex;
+    justify-content: center;
+    padding: 2% 0 5% 0;
+}
+
+
+.grid-item{
+    background-color: rgb(54, 59, 63);
+    border: white 1px solid;
+    padding: 10%;
+    &:hover{
+        transform: scale(1.02);
+        transition-property: all;
+        transition-duration: 0.5s;
+        background-color: rgb(54, 59, 63);
+    }
+}
+
+.link-int{
+    text-decoration: none;
+}
+
+/*------------------------- Responsive -----------------------*/
+@media only screen and (max-width: 768px){
+    *{
+        font-size:90% !important;
+    }
+    header img{
+        width: 50px;
+        height: 10px;
+    }
+    .header-end{
+        position: sticky;
+        top: 9px;
+        z-index: 300;
+    }
+    header{
+        background-color: var(--main-background);
+        z-index: 300;
+    }
+
+    .grid-item img{
+        display: grid;
+        width: 100%;
+        height: 100%;
+        justify-self: center;
+    }
+    .grid-item p{
+        display: grid;
+        justify-content: center;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .grid-item{
+        margin: 0;
+        padding: 0;
+        align-self: center;
+        align-items: center;
+    }
+    .nav-int{
+        display: none;
+    }
+} 
+
+/*------------------ Fin Servicios---------------------------*/

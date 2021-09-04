@@ -1,0 +1,64 @@
+/* --------------------------- INDEX --------------------------*/
+/* Formato de contenido */
+h1{
+    display:flex;
+    font-family: var(--main-font-family);
+    color: var(--main-title-color);
+    text-transform: uppercase;
+    letter-spacing: 0.7rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    justify-content: center;
+    font-size: 2rem;
+    width: 100%;
+}
+
+h2{
+    font-family: var(--main-font-family);
+    color: var(--main-title-color);
+    font-size: 1.6rem;
+    letter-spacing: 0.3rem;
+    display: flex;
+    justify-content: left;
+    padding-top: 2%;
+}
+
+/* Ofrecimientos */
+.offers-container{    
+    .offers-title{
+        display: flex;
+        margin-top: 2%;
+        padding-left: 35%;
+        }
+    .offers{
+            width: 100%;
+            display: flex;
+            padding: 10px;
+            align-items: center;
+            justify-content: center;
+            a{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-decoration: none;
+                color: var(--main-link-color);
+                &::after{
+                    content: ">";
+                }
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+            p{
+                width: 80%;
+                margin-left: 5%;
+                margin-right: 5%;
+            } 
+        }
+}
+
+.card-text{
+    color: black !important;
+}
+
+/*--------------------------- FIN INDEX ----------------------------*/

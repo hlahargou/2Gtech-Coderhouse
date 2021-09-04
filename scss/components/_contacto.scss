@@ -1,0 +1,38 @@
+/*---------------------- Contacto ---------------------------*/
+#Comunicacion{
+    ul{
+        width: 100%;
+        border: 1px white solid;
+        display: flex;
+        padding-left: 5%;
+        li{
+            font-family: var(--main-font-p);
+            color: var(--main-text-color);
+            margin: 3% 0;
+            img{
+                width: 5%;
+            }
+        }
+    }
+}
+
+.map{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.ubicacion{
+     h2 {
+        display: flex;
+        justify-content: center;
+        padding: 4% 0 5% 0;
+    }
+}   
+
+.formt{
+    display: flex;
+    justify-content: center;
+    color: var(--main-text-color);
+    font-family: var(--main-font-p);
+}
+/*-------------------- Fin Contacto -------------------------*/

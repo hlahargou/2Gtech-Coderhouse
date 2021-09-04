@@ -1,0 +1,20 @@
+/*------------------ Footer --------------------------------*/
+footer{
+    padding-top: 5%;
+    margin: 1% 0;
+    display: flex;
+    justify-content: space-between;
+    p{
+        padding: 0;
+        margin: 0;
+        font-size: 0.7rem;
+        color: rgb(77, 77, 77); 
+    }
+    a{
+        text-decoration: none;
+        color: var(--main-link-color);
+        padding-right: 50%;
+    }
+}
+
+/*------------------ Fin Footer ------------------------------*/
