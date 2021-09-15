@@ -42,10 +42,10 @@ h2{
                 justify-content: center;
                 text-decoration: none;
                 color: var(--main-link-color);
-                &::after{
-                    content: ">";
-                }
                 &:hover{
+                    &::after{
+                        content: ">";
+                    }
                     text-decoration: underline;
                 }
             }
@@ -62,3 +62,17 @@ h2{
 }
 
 /*--------------------------- FIN INDEX ----------------------------*/
+@media only screen and (max-width: 1100px){
+    .offers{
+        flex-direction: column  ;
+        p{
+            
+        width: 100%;
+            width: 100%;
+        }
+    }
+    .card{
+        width: 75%;
+        margin-bottom: 5rem;
+    }
+}

@@ -22,7 +22,7 @@
     width: 100%;
 }
 .ubicacion{
-     h2 {
+    h2 {
         display: flex;
         justify-content: center;
         padding: 4% 0 5% 0;
@@ -36,3 +36,17 @@
     font-family: var(--main-font-p);
 }
 /*-------------------- Fin Contacto -------------------------*/
+
+/*-------------------- Responsive -------------------------*/
+
+@media only screen and (max-width: 1400px){
+    #Comunicacion{
+        ul{
+            list-style: none;
+            display: list-item;
+            a{
+                font-size: 50%;
+            }
+        }
+    }
+}

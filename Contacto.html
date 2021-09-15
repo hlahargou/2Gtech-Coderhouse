@@ -21,58 +21,51 @@
     <title>2Gtech - Contacto</title>
 </head>
 <body>
-    <header>
-        <a href="index.html">
-            <img src="https://i.ibb.co/yRKV0fd/isologo.png" alt="2Gtech" class="img-logo">
-        </a>
-            <nav>
-            <ul class="nav">
-                <li class="links">
-                    <a href="Servicios.html">
-                        Servicios
-                    </a>
-                        <ul>
-                            <li>
-                                <a href="Servicios.html#imgING">
-                                    Ingeniería Ad-Hoc
-                                </a>
-                            </li>
-                            
-                            <li>
-                                <a href="Servicios.html#imgSTFW">
-                                    Desarrollo de Software
-                                </a>
-                            </li>
-                            
-                            <li>
-                                <a href="Servicios.html#img3D">
-                                    Impresión 3D
-                                </a>
-                            </li>
-                            
-                            <li>
-                                <a href="Servicios.html#Comex">
-                                    Servicio de importación
-                                </a>
-                            </li>
+    <header class="w-100">
+        <nav class="navbar navbar-expand-xl navbar-dark bg-dark w-100">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="https://i.ibb.co/yRKV0fd/isologo.png" alt="2Gtech" class="img-logo"></a>
+            <div class="d-flex justify-content-right">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDark" aria-controls="navbarDark" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse show" id="navbarDark">
+                        <div class="nav">
+                        <ul class="navbar-nav me-auto mb-2 mb-xl-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="Servicios.html">Servicios</a>
+                            <ul>
+                                <li>
+                                    <a href="Servicios.html#imgING">Ingeniería Ad-Hoc</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="Servicios.html#imgSTFW">Desarrollo de Software</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="Servicios.html#img3D">Impresión 3D</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="Servicios.html#Comex">Servicio de importación</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Conocenos.html">Conocenos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Contacto.html">Contactanos</a>
+                        </li>
+                    </div>
                         </ul>
-                </li>
-                <li class="links">
-                    <a href="Productos.html">
-                        Productos
-                    </a>
-                </li>
-                <li class="links">
-                    <a href="Conocenos.html">
-                        Conocenos
-                    </a>
-                </li>
-                <li class="links">
-                    <a href="Contacto.html">
-                        Contacto
-                    </a>
-                </li>
-            </ul>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
         <!-- Fin Header -->
@@ -111,35 +104,35 @@
         <section id="formulario" class="container py-5" >
             <form class="row g-3">
                 <div class="col-md-12">
-                <label for="inputEmail4" class="form-label formt">Email</label>
-                <input type="email" class="form-control" id="inputEmail4">
+                    <label for="inputEmail4" class="form-label formt">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4">
                 </div>
                 <div class="col-md-6">
-                <label for="inputPassword4" class="form-label formt">Nombre</label>
-                <input type="password" class="form-control" id="inputPassword4">
+                    <label for="inputPassword4" class="form-label formt">Nombre</label>
+                    <input type="password" class="form-control" id="inputPassword4">
                 </div>
                 <div class="col-6">
-                <label for="inputAddress" class="form-label formt">Teléfono</label>
-                <input type="text" class="form-control" id="inputAddress" placeholder="">
+                    <label for="inputAddress" class="form-label formt">Teléfono</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="">
                 </div>
                 <div class="col-6">
-                <label for="inputAddress2" class="form-label formt">Ciudad</label>
-                <input type="text" class="form-control" id="inputAddress2">
+                    <label for="inputAddress2" class="form-label formt">Ciudad</label>
+                    <input type="text" class="form-control" id="inputAddress2">
                 </div>
                 <div class="col-md-6">
-                <label for="inputCity" class="form-label formt">Provincia</label>
-                <input type="text" class="form-control" id="inputCity">
+                    <label for="inputCity" class="form-label formt">Provincia</label>
+                    <input type="text" class="form-control" id="inputCity">
                 </div>
                 <div class="col-md-12">
-                <label for="inputState" class="form-label formt">Tema de su consulta</label>
-                <select id="inputState" class="form-select">
-                    <option selected>Seleccione servicio</option>
-                    <option>Presupuesto de proyecto</option>
-                    <option>Necesito desarrollo de software</option>
-                    <option>Quiero importar!</option>
-                    <option>Fabricación de placas</option>
-                    <option>Diseño de placas</option>
-                </select>
+                    <label for="inputState" class="form-label formt">Tema de su consulta</label>
+                    <select id="inputState" class="form-select">
+                        <option selected>Seleccione servicio</option>
+                        <option>Presupuesto de proyecto</option>
+                        <option>Necesito desarrollo de software</option>
+                        <option>Quiero importar!</option>
+                        <option>Fabricación de placas</option>
+                        <option>Diseño de placas</option>
+                    </select>
                 </div>
                 <div class="col-5">
                     <div class="form-check">
@@ -154,15 +147,13 @@
                 </div>
             </form>
         </section>
-            
+
         <!-- Footer -->
         <footer>
             <p>
                 Copyright © 2021 2Gtech. Todos los derechos reservados.
             </p>
-            <a href="index.html">
-                Home
-            </a>
+            <a href="index.html">Home</a>
         </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>

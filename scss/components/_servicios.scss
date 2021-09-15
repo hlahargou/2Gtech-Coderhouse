@@ -23,22 +23,55 @@
 }
 
 /*------------------------- Responsive -----------------------*/
+@media only screen and (min-width: 768px) and (max-width: 1200px){
+    .nav{
+        ul{
+            li{
+                ul{
+                    li{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
 @media only screen and (max-width: 768px){
     *{
-        font-size:92% !important;
+        font-size: 20px !important;
     }
-    header img{
-        width: 50px;
-        height: 10px;
+
+    .nav{
+        ul{
+            li{
+                ul{
+                    li{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    header{
+        margin-top: 0;
+        a{
+            img{
+                margin:0;
+                padding: 0;
+                width: 50%;
+            }
+        }
     }
     .header-end{
         position: sticky;
         top: 9px;
         z-index: 300;
     }
-    header{
-        background-color: var(--main-background);
-        z-index: 300;
+    nav{
+        display: none;
     }
 
     .grid-item img{
@@ -63,6 +96,14 @@
     .nav-int{
         display: none;
     }
+    footer{
+        display: none;
+    }
+    
+    .rrss{
+        display: none;  
+    }
 } 
+
 
 /*------------------ Fin Servicios---------------------------*/
