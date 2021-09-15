@@ -226,8 +226,12 @@ footer a {
 /*-------------------- Responsive -------------------------*/
 @media only screen and (max-width: 1400px) {
   #Comunicacion ul {
+    border: none;
     list-style: none;
     display: list-item;
+  }
+  #Comunicacion ul li {
+    border: none;
   }
   #Comunicacion ul a {
     font-size: 50%;
@@ -352,10 +356,6 @@ h2 {
 @media only screen and (max-width: 1200px) {
   .offers {
     flex-direction: column;
-  }
-  .offers p {
-    width: 100%;
-    width: 100%;
   }
 
   .card {
