@@ -38,9 +38,18 @@
             justify-content: center;
             text-decoration: none;
             color: var(--main-link-color);
-            &:hover::after{
+            &:hover{
+            text-decoration: underline;
+                &::after{
                 content: ">";
+                }
             }
         }
 }
 /*------------------ Fin Productos ------------------------------*/
+/*------------------------- Responsive -----------------------*/
+@media only screen and (max-width: 768px){
+    .nav-int{
+        display: none;
+    }
+}
