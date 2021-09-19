@@ -1,13 +1,15 @@
 /*------------------ Footer --------------------------------*/
 footer{
     display: flex; 
-    border: solid 1px white;
     justify-content: space-between;
+    align-items: center;
+    border-top: 1px white  solid;
+    padding: 1rem 0;
     p{
         color: rgb(77, 77, 77); 
-        border: 1px white solid;
         display: flex;
         justify-content: left;
+        align-items: center;
         font-size: 0.7rem;
         margin-right: 25%;
     }
@@ -25,7 +27,6 @@ footer{
             margin: 0 1rem;
             width: 10%;
                 img{
-                    border: 1px white solid;
                     width: 100%;
                 }
             }

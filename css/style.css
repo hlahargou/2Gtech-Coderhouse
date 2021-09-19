@@ -79,14 +79,16 @@ header nav ul li:hover ul {
 /*------------------ Footer --------------------------------*/
 footer {
   display: flex;
-  border: solid 1px white;
   justify-content: space-between;
+  align-items: center;
+  border-top: 1px white solid;
+  padding: 1rem 0;
 }
 footer p {
   color: #4d4d4d;
-  border: 1px white solid;
   display: flex;
   justify-content: left;
+  align-items: center;
   font-size: 0.7rem;
   margin-right: 25%;
 }
@@ -105,7 +107,6 @@ footer .rrss a {
   width: 10%;
 }
 footer .rrss a img {
-  border: 1px white solid;
   width: 100%;
 }
 
@@ -158,20 +159,6 @@ footer .rrss a img {
 }
 
 /*-------------------- Fin Contacto -------------------------*/
-/*-------------------- Responsive -------------------------*/
-@media only screen and (max-width: 1400px) {
-  #Comunicacion ul {
-    border: none;
-    list-style: none;
-    display: list-item;
-  }
-  #Comunicacion ul li {
-    border: none;
-  }
-  #Comunicacion ul a {
-    font-size: 50%;
-  }
-}
 /*------------------ Productos ------------------------------*/
 #ecommerce {
   display: grid;
@@ -220,12 +207,6 @@ footer .rrss a img {
 }
 
 /*------------------ Fin Productos ------------------------------*/
-/*------------------------- Responsive -----------------------*/
-@media only screen and (max-width: 768px) {
-  .nav-int {
-    display: none;
-  }
-}
 /* --------------------------- INDEX --------------------------*/
 /* Formato de contenido */
 h1 {
@@ -288,16 +269,6 @@ h2 {
 }
 
 /*--------------------------- FIN INDEX ----------------------------*/
-@media only screen and (max-width: 1200px) {
-  .offers {
-    flex-direction: column;
-  }
-
-  .card {
-    width: 75%;
-    margin-bottom: 5rem;
-  }
-}
 /*Declaración de variables*/
 * {
   --main-title-color: rgb(65, 228, 136);
@@ -444,8 +415,35 @@ body {
   }
   footer .rrss a img {
     margin-left: 1rem;
-    border: 1px white solid;
     width: 100%;
+  }
+
+  /* Productos */
+  .nav-int {
+    display: none;
+  }
+
+  /* Contacto */
+  #Comunicacion ul {
+    border: none;
+    list-style: none;
+    display: list-item;
+  }
+  #Comunicacion ul li {
+    border: none;
+  }
+  #Comunicacion ul a {
+    font-size: 50%;
+  }
+
+  /* Index */
+  .offers {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 75%;
+    margin-bottom: 5rem;
   }
 }
 body {

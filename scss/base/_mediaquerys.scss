@@ -58,12 +58,38 @@
                 width: 30%;
                     img{
                         margin-left: 1rem;
-                        border: 1px white solid;
                         width: 100%;
                     }
                 }
             }
         }
-    
+    /* Productos */
+        .nav-int{
+            display: none;
+        }
+
+        /* Contacto */
+        #Comunicacion{
+            ul{
+                border: none;
+                list-style: none;
+                display: list-item;
+                li{
+                    border: none;
+                }
+                a{
+                    font-size: 50%;
+                }
+            }
+        }
+
+        /* Index */
+        .offers{
+            flex-direction: column;
+        }
+        .card{
+            width: 75%;
+            margin-bottom: 5rem;
+        }
 
 } 
