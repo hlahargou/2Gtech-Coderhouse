@@ -21,7 +21,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@700&family=Josefin+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto&display=swap");
 header {
-  border: 1px white solid;
   z-index: 999;
   background-color: var(--main-background);
   top: 0;
@@ -286,6 +285,7 @@ h2 {
   /* Box Modeling - Reseteo de margin y padding */
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 /* Formato de contenido */
@@ -442,7 +442,6 @@ body {
   }
 
   .card {
-    width: 75%;
     margin-bottom: 5rem;
   }
 }
