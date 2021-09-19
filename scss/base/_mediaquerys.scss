@@ -1,0 +1,69 @@
+/*------------------------- Responsive -----------------------*/
+
+
+@media only screen and (max-width: 768px){
+    *{
+        font-size: 20px !important;
+    }
+
+    .nav{
+        ul{
+            li{
+                ul{
+                    li{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    header{
+        margin-top: 0;
+        a{
+            img{
+                margin:0;
+                padding: 0;
+                width: 50%;
+            }
+        }
+    }
+    .header-end{
+        position: sticky;
+        top: 9px;
+        z-index: 300;
+    }
+    nav{
+        display: none;
+    }
+    .nav-int{
+        display: none;
+    }
+    footer{
+        align-items: center;
+        p{
+            font-size: 0.6rem !important;
+            margin-right: 35%;
+            padding-right: 10%;
+            width: 100%;
+            margin-bottom: 0;
+        }
+        .home{
+
+            padding-left: 5rem;
+        }
+        .rrss{
+            a{
+                margin: 0 0.8rem;
+                width: 30%;
+                    img{
+                        margin-left: 1rem;
+                        border: 1px white solid;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    
+
+} 

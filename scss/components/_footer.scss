@@ -1,20 +1,36 @@
 /*------------------ Footer --------------------------------*/
 footer{
-    padding-top: 5%;
-    margin: 1% 0;
-    display: flex;
+    display: flex; 
+    border: solid 1px white;
     justify-content: space-between;
     p{
-        padding: 0;
-        margin: 0;
-        font-size: 0.7rem;
         color: rgb(77, 77, 77); 
+        border: 1px white solid;
+        display: flex;
+        justify-content: left;
+        font-size: 0.7rem;
+        margin-right: 25%;
     }
-    a{
+    .home{
         text-decoration: none;
         color: var(--main-link-color);
-        padding-right: 50%;
+        display:flex;
+        justify-content: center;
     }
-}
+    .rrss{
+        display: flex;
+        justify-content: right;
+
+        a{
+            margin: 0 1rem;
+            width: 10%;
+                img{
+                    border: 1px white solid;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
 
 /*------------------ Fin Footer ------------------------------*/

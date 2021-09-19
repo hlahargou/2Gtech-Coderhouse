@@ -1,26 +1,27 @@
 @charset "UTF-8";
-/* ---------------------------RRSS-----------------------------*/
-@import url("https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@700&family=Josefin+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto&display=swap");
-.rrss {
-  display: grid;
-  grid-template-columns: 1, 1fr;
-  grid-template-rows: repeat(3, 1fr);
-  grid-gap: 0.5rem;
-  position: fixed;
-  bottom: 50px;
-  right: 30px;
-  height: 10%;
-  width: 2%;
-  z-index: 2000;
-}
-.rrss img {
-  width: 100%;
+/* ---------------------------RRSS-----------------------------
+.rrss{
+    display: grid;
+    grid-template-columns: 1, 1fr;
+    grid-template-rows: repeat(3,1fr);
+    grid-gap: 0.5rem;
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+    height: 10%;
+    width:2%;
+    z-index: 2000;
+    img{
+        width: 100%;
+    }
 }
 
 /*--------------------------FIN RRSS---------------------------*/
 /* Navegador */
+@import url("https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@700&family=Josefin+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto&display=swap");
 header {
+  border: 1px white solid;
   z-index: 999;
   background-color: var(--main-background);
   top: 0;
@@ -77,21 +78,35 @@ header nav ul li:hover ul {
 
 /*------------------ Footer --------------------------------*/
 footer {
-  padding-top: 5%;
-  margin: 1% 0;
   display: flex;
+  border: solid 1px white;
   justify-content: space-between;
 }
 footer p {
-  padding: 0;
-  margin: 0;
-  font-size: 0.7rem;
   color: #4d4d4d;
+  border: 1px white solid;
+  display: flex;
+  justify-content: left;
+  font-size: 0.7rem;
+  margin-right: 25%;
 }
-footer a {
+footer .home {
   text-decoration: none;
   color: var(--main-link-color);
-  padding-right: 50%;
+  display: flex;
+  justify-content: center;
+}
+footer .rrss {
+  display: flex;
+  justify-content: right;
+}
+footer .rrss a {
+  margin: 0 1rem;
+  width: 10%;
+}
+footer .rrss a img {
+  border: 1px white solid;
+  width: 100%;
 }
 
 /*------------------ Fin Footer ------------------------------*/
@@ -102,90 +117,10 @@ footer a {
   padding: 2% 0 5% 0;
 }
 
-.grid-item {
-  background-color: #363b3f;
-  border: white 1px solid;
-  padding: 10%;
-}
-.grid-item:hover {
-  transform: scale(1.02);
-  transition-property: all;
-  transition-duration: 0.5s;
-  background-color: #363b3f;
-}
-
 .link-int {
   text-decoration: none;
 }
 
-/*------------------------- Responsive -----------------------*/
-@media only screen and (min-width: 768px) and (max-width: 1200px) {
-  .nav ul li ul li {
-    display: none;
-  }
-}
-@media only screen and (max-width: 768px) {
-  * {
-    font-size: 20px !important;
-  }
-
-  .nav ul li ul li {
-    display: none;
-  }
-
-  header {
-    margin-top: 0;
-  }
-  header a img {
-    margin: 0;
-    padding: 0;
-    width: 50%;
-  }
-
-  .header-end {
-    position: sticky;
-    top: 9px;
-    z-index: 300;
-  }
-
-  nav {
-    display: none;
-  }
-
-  .grid-item img {
-    display: grid;
-    width: 100%;
-    height: 100%;
-    justify-self: center;
-  }
-
-  .grid-item p {
-    display: grid;
-    justify-content: center;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-  }
-
-  .grid-item {
-    margin: 0;
-    padding: 0;
-    align-self: center;
-    align-items: center;
-  }
-
-  .nav-int {
-    display: none;
-  }
-
-  footer {
-    display: none;
-  }
-
-  .rrss {
-    display: none;
-  }
-}
 /*------------------ Fin Servicios---------------------------*/
 /*---------------------- Contacto ---------------------------*/
 #Comunicacion ul {
@@ -457,7 +392,63 @@ body {
     opacity: 100%;
   }
 }
-.prueb {
+/*------------------------- Responsive -----------------------*/
+@media only screen and (max-width: 768px) {
+  * {
+    font-size: 20px !important;
+  }
+
+  .nav ul li ul li {
+    display: none;
+  }
+
+  header {
+    margin-top: 0;
+  }
+  header a img {
+    margin: 0;
+    padding: 0;
+    width: 50%;
+  }
+
+  .header-end {
+    position: sticky;
+    top: 9px;
+    z-index: 300;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .nav-int {
+    display: none;
+  }
+
+  footer {
+    align-items: center;
+  }
+  footer p {
+    font-size: 0.6rem !important;
+    margin-right: 35%;
+    padding-right: 10%;
+    width: 100%;
+    margin-bottom: 0;
+  }
+  footer .home {
+    padding-left: 5rem;
+  }
+  footer .rrss a {
+    margin: 0 0.8rem;
+    width: 30%;
+  }
+  footer .rrss a img {
+    margin-left: 1rem;
+    border: 1px white solid;
+    width: 100%;
+  }
+}
+body {
   border: 1px white solid;
 }
 
